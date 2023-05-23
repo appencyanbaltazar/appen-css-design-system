@@ -1,0 +1,122 @@
+* {
+  font-family: "Appen Basis";
+}
+
+hr {
+  color: #D0D3D4 !important;
+}
+
+.border-1 {
+  border: 0.5px solid #D0D3D4 !important;
+}
+
+.border-solid {
+  border-color: #D0D3D4;
+}
+
+.box {
+  border: 0.5px solid #D0D3D4;
+}
+.box + .box {
+  border-left: 0;
+}
+.box--header, .box--content {
+  padding: 16px;
+  border-color: #D0D3D4 !important;
+}
+.box--content {
+  border-top: 0.5px solid #D0D3D4;
+  background-color: #F9F9FB;
+  min-height: 150px;
+}
+
+.token.tag {
+  padding: 0 !important;
+  color: #003B49;
+}
+.token.tag + .tag {
+  display: inline;
+}
+.token.punctuation, .token.attr-name {
+  color: #003B49;
+}
+.token.attr-value {
+  color: #007693;
+}
+
+#logo-sidebar ul li a {
+  padding: 16px;
+  border-radius: 0;
+}
+#logo-sidebar ul li a:hover, #logo-sidebar ul li a.active {
+  background-color: #007693;
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #007693;
+}
+h1 + p,
+h1 + hr + p, h2 + p,
+h2 + hr + p, h3 + p,
+h3 + hr + p, h4 + p,
+h4 + hr + p, h5 + p,
+h5 + hr + p, h6 + p,
+h6 + hr + p {
+  color: #4B4F54;
+}
+
+h1 {
+  font-size: 23px !important;
+}
+
+h2 {
+  font-size: 20px !important;
+}
+
+button,
+.button {
+  border-radius: 0;
+  border: none;
+}
+button--large,
+.button--large {
+  padding: 9px 16px 7px 16px;
+}
+button--medium,
+.button--medium {
+  padding: 6px 8px 4px 8px;
+}
+button--primary,
+.button--primary {
+  background-color: black;
+  color: white;
+}
+button--primary-disabled, button--primary-hover, button--primary-focus-active,
+.button--primary-disabled,
+.button--primary-hover,
+.button--primary-focus-active {
+  color: white;
+}
+button--primary:disabled, button--primary-disabled,
+.button--primary:disabled,
+.button--primary-disabled {
+  background-color: #898989;
+}
+button--primary:hover, button--primary-hover,
+.button--primary:hover,
+.button--primary-hover {
+  background-color: #003B49;
+}
+button--primary:focus, button--primary-focus-active,
+.button--primary:focus,
+.button--primary-focus-active {
+  background-color: #007693;
+}
+button i,
+.button i {
+  margin-right: 8px;
+  width: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

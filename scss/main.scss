@@ -1,0 +1,162 @@
+// ----- VARIABLES -----//
+    // ----- COLORS -----//
+        // Brand
+            $brand-primary: black;
+            $brand-secondary: #003B49;
+            $brand-secondary-2: #007693;
+
+        // Gray
+            // Dividers
+            $gray-20: #D0D3D4;
+
+            // Lighter text
+            $gray-60: #4B4F54;
+
+        // Background
+            $bg-40-lite: #F9F9FB;
+
+        // Lines, boxes, and borders
+            $border-05: 0.5px;
+            $box-border-color: $gray-20;
+            $box-border: 0.5px solid $box-border-color;
+    
+    // ----- TYPOGRAPHY -----//
+        $font-family: "Appen Basis";
+        $font-weight-normal: 300;
+        $h1-font-size: 23px;
+        $h2-font-size: 20px;
+        $p-lighter-text: $gray-60;
+
+    // ----- BUTTONS -----//
+        $btn-primary-bg-color: $brand-primary;
+        $btn-primary-disabled-bg-color: #898989;
+        $btn-primary-focus-active: $brand-secondary-2;
+        $btn-primary-bg-color-hover: $brand-secondary;
+        $btn-padding-large: 9px 16px 7px 16px;
+        $btn-padding-medium: 6px 8px 4px 8px;
+
+    // ----- MENU SIDEBAR -----//
+        $menu-item-padding: 16px;
+
+// GENERAL
+    * {
+        font-family: $font-family;
+    }
+
+    // Lines, boxes, and borders
+        hr {
+            color: $gray-20 !important;
+        }
+
+        .border-1 {
+            border: 0.5px solid $box-border-color !important; 
+        }
+
+        .border-solid {
+            border-color: $gray-20;
+        }
+
+        .box {
+            border: $box-border;
+            + .box {
+                border-left: 0;
+            }
+            &--header,
+            &--content {
+                padding: 16px;
+                border-color: $gray-20 !important;
+            }
+            &--content {
+                border-top: $box-border;
+                background-color: $bg-40-lite;
+                min-height: 150px;
+            } 
+        }
+
+    // Code
+        .token {
+            &.tag {
+                padding: 0 !important;
+                color: $brand-secondary;
+                + .tag {
+                    display: inline;
+                }
+            }
+            &.punctuation,
+            &.attr-name {
+                color: $brand-secondary;
+            }
+            &.attr-value {
+                color: $brand-secondary-2;
+            }
+        }
+
+
+
+// MENU
+    #logo-sidebar {
+        ul li a {
+            padding: $menu-item-padding;
+            border-radius: 0;
+            &:hover,
+            &.active {
+                background-color: $brand-secondary-2;
+                color: white;
+            }
+        }
+    }
+
+// ATOMS
+    // Typography
+        h1, h2, h3, h4, h5, h6 {
+            color: $brand-secondary-2;
+            + p,
+            + hr + p {
+                color: $p-lighter-text;
+            }
+        }
+        h1 {
+            font-size: $h1-font-size !important;
+        }
+
+        h2 {
+            font-size: $h2-font-size !important;
+        }
+    // Buttons
+        button,
+        .button {
+            border-radius: 0;
+            border: none;
+            &--large {
+                padding: $btn-padding-large;
+            }
+            &--medium {
+                padding: $btn-padding-medium;
+            }
+            &--primary {
+                background-color: $btn-primary-bg-color;
+                color: white;
+                &-disabled,
+                &-hover,
+                &-focus-active {
+                    color: white;
+                }
+                &:disabled,
+                &-disabled {
+                    background-color: $btn-primary-disabled-bg-color;
+                }
+                &:hover,
+                &-hover {
+                    background-color: $btn-primary-bg-color-hover;
+                }
+                &:focus,
+                &-focus-active {
+                    background-color: $btn-primary-focus-active;
+                }
+            }
+            i {
+                margin-right: 8px;
+                width: 20px;
+            }
+        }
+
