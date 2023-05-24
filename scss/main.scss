@@ -58,6 +58,9 @@
 
         .box {
             border: $box-border;
+            h3 {
+                font-weight: 500;
+            }
             + .box {
                 border-left: 0;
             }
@@ -84,7 +87,7 @@
             }
             &.punctuation,
             &.attr-name {
-                color: $brand-secondary;
+                color: $gray-60;
             }
             &.attr-value {
                 color: $brand-secondary-2;
@@ -108,7 +111,7 @@
 
 // ATOMS
     // Typography
-        h1, h2, h3, h4, h5, h6 {
+        h1, h2 {
             color: $brand-secondary-2;
             + p,
             + hr + p {

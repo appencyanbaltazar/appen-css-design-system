@@ -17,6 +17,9 @@ hr {
 .box {
   border: 0.5px solid #D0D3D4;
 }
+.box h3 {
+  font-weight: 500;
+}
 .box + .box {
   border-left: 0;
 }
@@ -38,7 +41,7 @@ hr {
   display: inline;
 }
 .token.punctuation, .token.attr-name {
-  color: #003B49;
+  color: #4B4F54;
 }
 .token.attr-value {
   color: #007693;
@@ -53,16 +56,12 @@ hr {
   color: white;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   color: #007693;
 }
 h1 + p,
 h1 + hr + p, h2 + p,
-h2 + hr + p, h3 + p,
-h3 + hr + p, h4 + p,
-h4 + hr + p, h5 + p,
-h5 + hr + p, h6 + p,
-h6 + hr + p {
+h2 + hr + p {
   color: #4B4F54;
 }
 
